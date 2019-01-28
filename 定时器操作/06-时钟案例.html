@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-时钟案例</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        #box{
+            width: 700px;
+            height: 700px;
+            background: url("表盘.jpg") no-repeat ;
+            margin: 100px auto;
+            position: relative;
+        }
+        #min,#hour,#second{
+
+            position: absolute;
+            left: 50%;
+            width: 30px;
+            height: 600px;
+            top: 0;
+            margin-left: -35px;
+        }
+        #hour{
+            background: url("时针.fw.png") no-repeat;
+        }
+        #min{
+            background: url("分针.fw.png") no-repeat;
+        }
+        #second{
+            background: url("秒针.fw.png") no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">
+    <div id="hour"></div>
+    <div id="min"></div>
+    <div id="second"></div>
+
+</div>
+
+<script>
+    window.onload =function () {
+
+        //2.开启定时器
+        setInterval(function () {
+            //2.1获取当前时间戳
+            var date = new Date();
+
+            //2.2求出总毫秒数
+            var millS = date.getMilliseconds();
+            var s = date.getSeconds() + millS/1000;
+            var m = date.getMinutes() + s/60;
+            var h = date.getHours()%12 + m/60;
+
+            //2.3旋转
+            hour.style.transform = 'rotate('+ h * 30 + 'deg)';
+            min.style.transform = 'rotate('+ m * 6 + 'deg)';
+            second.style.transform = 'rotate('+ s * 6 + 'deg)';
+
+
+
+
+        },10)
+    };
+    function $(id) {
+        return typeof id ==="string"?document.getElementById(id):null;
+    }
+</script>
+</body>
+</html>

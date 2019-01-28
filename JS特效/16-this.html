@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>16-this</title>
+</head>
+<body>
+<button id="btn">点我啊</button>
+<script>
+    //this  self指针
+
+    /*
+    this所在的函数在哪个对象中，this就指向这个对象
+     */
+
+    /*function func() {
+        console.log(this);//window
+    }
+    func();*/
+    var btn = document.getElementById("btn");
+    btn.onclick = function () {
+        console.log(this);
+    }
+
+
+</script>
+
+</body>
+</html>

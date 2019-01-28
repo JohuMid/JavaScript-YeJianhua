@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>17-排他思想</title>
+</head>
+<body>
+<button>按钮1</button>
+<button>按钮2</button>
+<button>按钮3</button>
+<button>按钮4</button>
+<button>按钮5</button>
+<button>按钮6</button>
+<script>
+    window.onload = function () {
+        var btns = document.querySelectorAll('button');
+
+        for(var i = 0; i<btns.length; i++){//同步
+
+            /*btns[i].index = i+1;
+            btns[i].onclick = function () {
+                alert("你点击了按钮" + this.index);
+            }*/
+            (function (i) {
+                btns[i].onclick = function () {
+                    alert("你点击了按钮" + i);
+                }
+            })(i)
+        }
+
+    }
+</script>
+
+</body>
+</html>

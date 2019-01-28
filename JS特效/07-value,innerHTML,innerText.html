@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07-value,innerHTML,innerText</title>
+</head>
+<body>
+<div id="box">
+    <p>hduwdh</p>
+    <img src="" alt="">
+</div>
+<input id="inp" type="text" value="text">
+
+<script>
+    window.onload = function () {
+        var inp = document.getElementById("inp");
+        var box = document.getElementById("box");
+        inp.value = "我是mt";
+
+        console.log(box.innerHTML);
+        console.log(box.innerText);
+
+        //innerHTML标签里面的所有内容
+        //innerText双标签里面的内容
+    }
+</script>
+</body>
+</html>

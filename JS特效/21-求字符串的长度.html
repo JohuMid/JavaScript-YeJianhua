@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>21-求字符串的长度</title>
+</head>
+<body>
+
+<script>
+    var str = "hello world 45";
+    var str1 = "你好，世界! 14";
+
+//    console.log(str.length);
+//    console.log(str1.length * 2 - 2);
+    console.log(getStrlength(str));
+    console.log(getStrlength(str1));
+
+    /**
+     *
+     * 获取字符串的真实长度
+     *
+     */
+    function getStrlength(str) {
+        //1.定义变量
+        var len = 0;
+
+        //2.遍历
+        for(var i = 0; i< str.length; i++){
+            //2.1 Unicode码
+            code = str.charCodeAt(i);
+            //console.log(code);
+            //2.2判断
+            if(code >= 0 && code <= 127){
+                len +=1;
+
+            }else{
+                len +=2;
+            }
+        }
+        //3.返回长度
+        return len;
+
+    }
+</script>
+</body>
+</html>

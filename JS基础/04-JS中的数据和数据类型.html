@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-JS中的数据和数据类型</title>
+</head>
+<body>
+<script type="text/html">
+    console.log(typeof 10);
+    console.log(typeof '10');
+    //typeof是验证数据类型的工具
+</script>
+<script type="text/html">
+    console.log(Number.MAX_VALUE);//最大值
+    console.log(Number.MIN_VALUE);//最小值
+    console.log(typeof Infinity);//number
+    console.log(typeof Infinity);//number
+</script>
+<script type="text/html">
+    console.log(100 + 200);
+    console.log(1.33 * 2.55);
+</script>
+<script type="text/html">
+    //字符串类型
+    //相同引号不能嵌套，不同引号可以嵌套
+    //布尔类型true=1；false=0；
+    //任何非零数值，任何对象都是真的
+
+</script>
+<script type="text/html">
+    //undefined
+    var num1;
+    console.log(num1);
+    //变量中没有一个值的类型
+    //Null不指向任何一个对象
+    var str1 = null;
+    var str2 = undefined;
+    console.log(str1 == str2);
+    console.log(str1 === str2);//===值比较类型比较
+</script>
+<script type="text/html">
+    //toString();
+    var num = 123;
+    var str = num.toString();
+    console.log(str);
+    console.log(typeof str);
+    //null和undefined没有toString的方法
+    //NaN可以有toString的方法
+    //任何类型+任何类型都会变成字符串类型
+</script>
+<script>
+    //Number();
+    var str1 = '666';
+    var res1 = Number(str1);
+    console.log(res1);
+    console.log(typeof res1);
+    //如果字符串中有非数字字符和undefined，可以转成NaN
+    //如果字符串是空串或者全是空格，null，转出来是0
+    console.log(parseInt(220.36));//220
+    console.log(parseFloat(220.36));//220.36
+
+
+    console.log(Number.MAX_VALUE);
+</script>
+
+</body>
+</html>

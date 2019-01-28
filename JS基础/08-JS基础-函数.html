@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08-JS基础-函数</title>
+</head>
+<body>
+<script type="text/html">
+    //1、定义函数
+    function log(){
+        console.log(10);
+    }
+    //debugger;
+    //2、调用函数
+    log();
+</script>
+<script type="text/html">
+    //1)函数声明方式
+    function sum() {
+        console.log(1+3);
+    }
+    sum();
+    //2)函数表达式声明方式
+    var add = function () {
+        console.log(1+3)
+    };
+    add();
+    //3)构造函数声明
+    var add2 = new Function ('console.log(1+3)');
+    add2();
+
+</script>
+<script type="text/html">
+    function sum(num1, num2) {
+        console.log(num1 + num2);
+    }
+    sum(100, 400);
+</script>
+<script type="text/html">
+    //求出多个数的和
+    function sum(numArr) {
+        var value = 0;
+        for (var i=0;i<numArr.length;i++){
+            value +=numArr[i];
+        }
+        console.log(value);
+    }
+    var numArr = [10,20,30];
+    sum(numArr);
+</script>
+<script type="text/html">
+    //arguments对象
+    function sum() {
+        var value = 0;
+        for (var i =0; i<arguments.length; i++){
+            value += arguments[i];
+        }
+        console.log(value);
+        console.log(sum.length);
+        if (arguments.length === sum.length){
+
+        }
+    }
+    sum(10,20,30,56);
+</script>
+<script type="text/html">
+    /*function sum() {
+        console.log(1);
+        return "灵魂";
+        console.log(2);
+    }*/
+
+    console.log(sum());
+    function sum(num1, num2) {
+        return num2+num1;
+    }
+    var result = sum(10,20);
+    console.log(result);
+</script>
+<script type="text/html">
+    // 请写出一个判断一个数是不是偶数的函数
+    function isEven(num) {
+        if (num %2===0){
+            return"偶数";
+        }else{
+            return"奇数";
+        }
+    }
+
+    console.log(isEven(11));
+</script>
+<script type="text/html">
+    //请写出一个Math.min(x,y)的函数
+    function getMin(x, y) {
+        if (x > y){
+            return y;
+        }else{
+            return x;
+        }
+    }
+    console.log(getMin(-10,-20));
+</script>
+<script type="text/html">
+    //直接函数声明会提到最前面
+    //表达式声明不会
+
+    document.onclick=function () {
+        alert('点我干嘛');
+    };
+    setInterval(function () {
+        console.log(1111);
+    },1000)
+</script>
+<script type="text/html">
+    //回调函数
+    /*function sum(a, b, func) {
+        func();
+    }*/
+    //总控方法
+    function fn(num1, num2, func) {
+        return func(num1, num2);
+    }
+    //+-*/
+    function add(a, b) {
+        return a+b;
+    }
+    function sub(a, b) {
+        return a-b;
+    }
+    function mul(a, b) {
+        return a*b;
+    }
+    function divide(a, b) {
+        return a+b;
+    }
+
+    console.log(fn(10, 20, add));
+
+
+</script>
+<script type="text/html">
+    //求Fibonacc的第n个数
+    //1 1 2 3 5 8 13 21...
+    function f1(n) {
+        if (n===1  || n===2)return 1;
+
+        return f1(n-1)+f1(n-2);
+    }
+
+    console.log(f1(8));
+</script>
+<script type="text/html">
+    //求n个数的累加
+    //递归函数
+
+    function getsum(n) {
+        if (1 === n) {return 1}
+        return n + getsum(n-1);
+
+    }
+
+    console.log(getsum(100));
+</script>
+<script>
+    /*
+        函数内部可以访问到该函数所属的外部作用域的变量
+        不用var声明的变量是全局变量，不推荐使用
+        变量退出作用域之后会销毁，全局变量关闭网页或浏览器才会销毁
+
+        作用域链
+     */
+</script>
+</body>
+</html>

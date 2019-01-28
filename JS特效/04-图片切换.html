@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-图片切换</title>
+</head>
+<body>
+<img id="icon" src="img/1.png" alt="">
+<p>
+<button id="prev">上一张</button>
+<button id="next">下一张</button>
+</p>
+<script>
+    window.onload = function () {
+        //1.获取标签
+        var arr = ["img/1.png","img/2.png","img/3.png","img/4.png","img/5.png","img/6.png"];
+        var icon = document.getElementById("icon");
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+
+        var maxIndex = arr.length-1,minIndex = 1,currentIndex = minIndex;
+        //上一张
+
+        prev.onclick = function () {
+            if(currentIndex === 0){
+                currentIndex = maxIndex;
+            }else{
+                currentIndex--;
+            }
+            icon.src = arr[currentIndex];
+        };
+        //下一张
+        next.onclick = function () {
+            if(currentIndex === 6){
+                currentIndex = minIndex;
+            }else{
+                currentIndex++;
+            }
+            icon.src = arr[currentIndex-1];
+        }
+
+
+    }
+</script>
+
+</body>
+</html>

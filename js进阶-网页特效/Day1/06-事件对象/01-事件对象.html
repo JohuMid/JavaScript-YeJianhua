@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn">点我</button>
+
+<script>
+    var btn = document.getElementById("btn");
+
+    btn.onmouseover = function () {
+        var e = event || window.event;
+        console.log(e.type);//触发事件安的类型
+    };
+    btn.onclick = function () {
+        var e = event || window.event;
+        console.log(e.target);//触发事件的标签
+    };
+</script>
+</body>
+</html>

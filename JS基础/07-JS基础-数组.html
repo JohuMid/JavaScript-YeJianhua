@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+</head>
+<body>
+<script type="text/html">
+    //求1-100之间的所有偶数的和、所有奇数的和
+
+    //1、定义变量
+    var evenSum = 0;//偶数和
+    var oddSum = 0;//奇数和
+    //2、循环
+    for(var i = 1; i<=100; i++){
+        if(i%2 === 0){
+            evenSum+=i;
+        }
+        else{
+            oddSum+=i;
+        }
+    }
+    console.log(evenSum);
+    console.log(oddSum);
+
+</script>
+<script type="text/html">
+    //本金10000元存入银行，年利率是千分之三，每过一年将本金和利息相加作为新的本金，计算5年后获得的本金是多少？
+    //1、定义变量
+    var money = 10000;
+    var rote = 0.003;
+    //2、开启循环
+    for(var i=1;i<=5;i++){
+        money = money+money * rote;
+    }
+    console.log(money);
+</script>
+<script type="text/html">
+    //1、使用Array构造函数
+    var arr1 = new Array();  //创建了一个空数组
+    var arr2 = new Array(20);//创建了一个长度为20的数组
+    var arr3 = new Array(50,"dhebdh","好的也U");
+
+    console.log(arr1);
+    console.log(arr2);
+    console.log(arr3);
+    //2、使用数组字面量
+    var arr4 = [];
+    var arr5 = [30,56,56];
+    console.log(arr4);
+    console.log(arr5);
+</script>
+<script type="text/html">
+    var arr = ["张三",15,"vgvHv","2662"];
+    console.log(arr.length);//数组中的长度
+    console.log(arr[0]);//从数组中取值
+    console.log(arr[arr.length]);//undefined
+</script>
+<script type="text/html">
+    //定义一个空数组，往数组中存入个人信息
+    /*var person = ["张三","男",33];
+    console.log(person);*/
+
+    //遍历数组[12,45,48,84],将其中的偶数输出
+    var numbers = [12,45,48,84];
+    for(var i=0; i<numbers.length;i++){
+        var item = numbers[i];
+        if(item%2 === 0){
+            console.log(item);
+        }
+    }
+</script>
+<script type="text/html">
+    //求一组数中的最大值和最小值，以及所在位置
+    //1、定义变量
+    var numArr = [1,99,88,-100,77,888];
+    var maxValue=numArr[0],minValue=numArr[0];
+    var maxIndex=0,minIndex=0;
+
+    //遍历数组
+    for (var i=1;i<numArr.length;i++){
+        //如果数组元素大于初始值
+        if(numArr[i] > maxValue){
+            //把元素赋给最大值，并把索引值改变
+            maxValue = numArr[i];
+            maxIndex = i;
+
+        }
+        if (numArr[i] < minValue){
+            minValue = numArr[i];
+            minIndex = i;
+        }
+    }
+    console.log(maxValue);
+    console.log(maxIndex);
+    console.log(minValue);
+    console.log(minIndex);
+
+</script>
+<script type="text/html">
+    //将数组中为0的去掉，不为零的存入一个新数组
+    var arr = ["张三",18,0,"男",0,1661616113];
+    var newArr = [];
+    for(var i=0;i<arr.length ;i++){
+        if (arr[i]!==0){
+            newArr[newArr.length]=arr[i];
+        }
+    }
+
+    console.log(newArr);
+</script>
+<script>
+    //join(separator)
+    //把数组中的值连成一个字符串，用separator链接
+    //push()
+    //往数组里面加值arr.push();
+    //pop()
+    //把数组最后一项移出arr.pop();
+    //shift()
+    //删除值到原数组的开头
+    //unshift()
+    //添加值到原数组的开头
+    //reverse()
+    //数组顺序翻转
+    //concat()
+    //数组先拆解在向后面加值
+    //indexOf()和lastIndex()
+    var arr = [2,4,6,8,8,6,4,2];
+    console.log(arr.indexOf(4, 2));
+    console.log(arr.lastIndexOf(2));
+</script>
+</body>
+</html>

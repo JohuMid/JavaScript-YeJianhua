@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07-禁止定时器累加</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+
+</div>
+
+<script>
+    //定时器累加形成越来越快
+    window.onload = function () {
+        var box = document.getElementById("box");
+        var height = 0, timer = null;
+
+        /*
+        先清除定时器，后设置定时器
+         */
+
+        box.onmouseover = function () {
+            clearInterval(timer);
+            timer = setInterval(function () {
+                console.log(height+=1);
+            }, 1000)
+        }
+    }
+</script>
+</body>
+</html>

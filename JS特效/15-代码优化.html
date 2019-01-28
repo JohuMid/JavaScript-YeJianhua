@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15-表单验证-上</title>
+    <style>
+        label{
+
+        }
+        input{
+            width: 200px;
+            height: 30px;
+            line-height: 50px;
+            font-size: 18px;
+            border: 1px solid deepskyblue;
+        }
+        #prompt{
+            color: darkgray;
+        }
+        .right{
+            background: url("img/good.png")no-repeat 5px center;
+            background-size: 15px 15px;
+            padding-left: 20px;
+            color: #1afa29 !important;
+        }
+        .error{
+            background: url("img/error.png")no-repeat 5px center;
+            background-size: 15px 15px;
+            padding-left: 20px;
+            color: #d81e06 !important;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <label>您的成绩:</label>
+    <input id="score" type="text" placeholder="请输入分数">
+    <span id="prompt">请输入你的成绩!</span>
+
+</div>
+<script>
+    window.onload = function () {
+        var prompt = document.getElementById("prompt");
+
+        $('score').onblur = function () {
+            //1.获取输入的内容
+            var value = parseFloat($("score").value);
+
+            //2.验证
+            if(isNaN(value)){
+
+                dealStyle('输入不合法','error','#d81e06')
+            }else if(value >= 0 && value <= 100){
+
+                dealStyle('输入成绩正确','right','#1afa29')
+
+            }else if(value <= 0 || value >= 100) {
+                dealStyle('输入不在正常范围内','error','#d81e06')
+            }
+        };
+        $('score').onfocus = function () {
+            $('score').style.outline = 'none';
+            $('score').value = '';
+
+            dealStyle('请输入你的分数','','darkgray')
+        };
+        function dealStyle(msg, className, color) {
+            $('prompt').innerText = msg;
+            $('prompt').className = className;
+            $('score').style.borderColor = color
+        }
+
+
+        function $(id) {
+            return typeof id === "string" ? document.getElementById(id) : null;
+        }
+    }
+</script>
+
+</body>

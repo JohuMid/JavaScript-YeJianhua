@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>28-日期特效</title>
+    <style>
+        #box{
+            width: 250px;
+            height: 300px;
+            background-color: orange;
+            margin: 100px auto;
+        }
+        #box_top{
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+        #box_bottom{
+            width: 200px;
+            height: 200px;
+            margin: 10px auto;
+            background-color: #ff522c;
+            font-size: 150px;
+            text-align: center;
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="box_top"></div>
+    <div id="box_bottom"></div>
+</div>
+<script>
+    window.onload = function () {
+        //1.创建日期对象
+        var date = new Date();
+        var y  = date.getFullYear();
+        var m = date.getMonth()+1;
+        var d = date.getDate();
+        var week = date.getDay();
+
+        var weeks = ['星期一','星期二','星期三','星期四','星期五','星期六','星期天'];
+        console.log(weeks[week+6]);
+
+        console.log(y);
+        console.log(m);
+        console.log(d);
+        console.log(week);
+        $('box_top').innerHTML = y + '年' + m + '月'+d+'日'+weeks[week+6];
+        $('box_bottom').innerHTML = d;
+
+
+    };
+    function $(id) {
+        return typeof id === "string" ? document.getElementById(id):null;
+    }
+
+</script>
+</body>
+</html>

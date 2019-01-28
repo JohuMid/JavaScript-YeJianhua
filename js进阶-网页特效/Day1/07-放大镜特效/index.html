@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        img{
+            vertical-align: top;
+        }
+        #box{
+            width: 450px;
+            height: 450px;
+            margin: 100px 0 0 100px;
+        }
+        #small_box{
+            width: 100%;
+            height: 100%;
+            border: 1px solid #cccccc;
+
+            position: relative;
+        }
+        #small_box img{
+            width: 450px;
+            height: 450px;
+        }
+        #mask{
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 255, 0, 0.4);
+            position: absolute;
+            left: 0;
+            top: 0;
+            cursor: move;
+            display: none;
+        }
+        #big_box{
+            width: 450px;
+            height: 450px;
+            border: 1px solid #cccccc;
+            overflow: hidden;
+            position: absolute;
+            left: 620px;
+            top: 0;
+            display: none;
+            margin-top: 100px;
+        }
+        #list{
+            margin: 20px 0 0 100px;
+        }
+        #list img{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="small_box">
+        <img src="images/middle%20(1).jpg" alt="">
+        <span id="mask"></span>
+    </div>
+    <div id="big_box">
+        <img src="images/big%20(1).jpg" alt="" style="position: absolute; left: 0; top: 0;">
+    </div>
+
+</div>
+<div id="list">
+    <img src="images/small%20(1).jpg" alt="">
+    <img src="images/small%20(2).jpg" alt="">
+    <img src="images/small%20(3).jpg" alt="">
+</div>
+
+<script>
+    window.onload = function () {
+        var box = document.getElementById('box');
+        var small_box = box.children[0];
+        var big_box = box.children[1];
+        //console.log(big_box);
+        var mask = small_box.children[1];
+        var big_img = big_box.children[0];
+        var list_img = document.getElementById('list').children;
+
+
+        small_box.onmouseover = function () {
+            //2.把隐藏的内容显示
+            mask.style.display = 'block';
+            big_box.style.display = 'block';
+
+            //2.2监听鼠标的移动
+            small_box.onmousemove = function () {
+                var event = event || window.event;
+
+                //2.3求出鼠标的坐标
+                var pointX = event.clientX - small_box.offsetParent.offsetLeft-mask.offsetWidth - 50;
+                var pointY = event.clientY - small_box.offsetParent.offsetTop-mask.offsetHeight - 50 ;
+
+
+                //2.4边界检查
+                if(pointX < 0 ){
+                    pointX = 0;
+                }else if(pointX > small_box.offsetWidth - mask.offsetWidth){
+                    pointX = small_box.offsetWidth - mask.offsetWidth;
+                }
+                if(pointY < 0 ){
+                    pointY = 0;
+                }else if(pointY > small_box.offsetHeight - mask.offsetHeight){
+                    pointY = small_box.offsetHeight - mask.offsetHeight;
+                }
+
+                //2.5放大镜移动
+
+                mask.style.left = pointX + 'px';
+                mask.style.top = pointY + 'px';
+
+                //2.6让大图动起来
+
+                /*
+                    smallX / bigX = smallBox.width/ 大图的宽度
+                    bigX = smallX / (smallBox.width)
+                 */
+                big_img.style.left = - pointX / (small_box.offsetWidth/big_box.offsetWidth) + 'px';
+                big_img.style.top = - pointY / (small_box.offsetHeight/big_box.offsetHeight)+ 'px';
+
+
+
+            }
+
+        };
+        small_box.onmouseout = function () {
+            mask.style.display = 'none';
+            big_box.style.display = 'none';
+
+        };
+        //4.遍历列表
+        for(var i =0; i<list_img.length; i++){
+            (function (index) {
+                var img = list_img[i];
+                img.onmouseover = function () {
+                    small_box.children[0].src = 'images/middle%20('+(index+1)+').jpg';
+                    big_box.children[0].src = 'images/big%20('+(index+1)+').jpg';
+
+                }
+            })(i)
+        }
+    }
+</script>
+
+</body>
+</html>

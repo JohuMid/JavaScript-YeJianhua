@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-图片的显示和隐藏</title>
+    <style>
+        #box{
+            margin-top: 200px;
+        }
+        #box_s{
+            margin-top: -250px;
+            margin-left: 120px;
+
+        }
+        #box_s>img{
+            width: 400px;
+            height: 400px;
+            display: none;
+            background-color: powderblue;
+        }
+        #box>img:hover{
+            background-color: deepskyblue;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box"><img id="small_img" src="img/2.png" alt=""></div>
+<div id="box_s"><img id="big_img" src="img/6.png" alt=""></div>
+<script>
+    window.onload = function () {
+        var img1 = document.getElementById("small_img");
+        var img2 = document.getElementById("big_img");
+
+        img1.onmouseover = function () {
+            img2.style.display = "block";
+            img2.onmouseover = function () {
+                img2.style.display = "block";
+            };
+            img2.onmouseout = function () {
+                img2.style.display = "none";
+            }
+        };
+
+
+    }
+</script>
+
+</body>
+</html>

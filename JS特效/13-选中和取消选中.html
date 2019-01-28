@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13-选中和取消选中</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            list-style: none;
+        }
+        #panel{
+            width: 400px;
+            border: 1px solid #aaa;
+            margin: 100px auto;
+            box-shadow: 0 0 10px black;
+            padding: 20px;
+        }
+        .panel-content{
+            margin-left: 100px;
+        }
+        .panel-header,.panel-footer{
+            text-align: center;
+        }
+        .panel-header{
+            margin-bottom: 10px;
+        }
+        .panel-footer{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="panel">
+    <section class="panel-header">
+        <h2>歌曲排行榜</h2>
+        <hr>
+    </section>
+    <section class="panel-content">
+        <input type="checkbox">1.夜曲<br>
+        <input type="checkbox">2.枫<br>
+        <input type="checkbox">3.告白气球<br>
+        <input type="checkbox">4.退后<br>
+        <input type="checkbox">5.搁浅<br>
+        <input type="checkbox">6.哪里都是你<br>
+        <input type="checkbox">7.稻香<br>
+        <input type="checkbox">8.可爱女人<br>
+        <input type="checkbox">9.东风破<br>
+    </section>
+    <section class="panel-footer">
+        <hr>
+        <button id="allSelect">全选</button>
+        <button id="cancelSelect">取消选中</button>
+        <button id="reverseSelect">反选</button>
+    </section>
+
+</div>
+<script>
+    window.onload = function () {
+        var allSelect = document.getElementById("allSelect");
+        var cancelSelect = document.getElementById("cancelSelect");
+        var reverseSelect = document.getElementById("reverseSelect");
+        var inp = document.getElementsByTagName("input");
+
+        allSelect.onclick = function () {
+            for(var i = 0; i < 9; i++){
+                inp[i].checked = "checked";
+            }
+        };
+        cancelSelect.onclick = function () {
+            for(var i = 0; i < 9; i++){
+                inp[i].checked = false;
+            }
+        };
+        reverseSelect.onclick = function () {
+            for(var i = 0; i < 9; i++){
+                inp[i].checked = !inp[i].checked;
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

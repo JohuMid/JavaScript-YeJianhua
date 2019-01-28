@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-开学定时器</title>
+    <style>
+        #time{
+            text-align: center;
+            font-size: 30px;
+            color: #d81e06;
+        }
+    </style>
+</head>
+<body>
+
+<div id="time">
+    距离开学还有<span id="day"></span>天<span id="hour"></span>小时 <span id="minute"></span>分钟 <span id="second"></span>秒
+</div>
+
+<script>
+    window.onload = function () {
+        var time = document.getElementById('time');
+
+        //2.自定义将来的时间
+        var nextDate = new Date('2018/03/05/ 00:00:00');
+
+        //3.开启定时器
+        setInterval(function () {
+            //4.获取现在的时间
+            var currentDate = new Date();
+
+            //5.获取时间戳
+            var currentTime = currentDate.getTime();
+            var nextTime = nextDate.getTime();
+            //console.log(nextTime);
+
+            //6.计算剩下的时间戳
+            var allTime = nextTime - currentTime;
+            //console.log(allTime);
+
+            //7.运算转化
+            var s = size(parseInt((allTime/1000)%60));
+            //console.log(s);
+
+            var m = size(parseInt((allTime/1000)/60 % 60));
+            //console.log(m);
+
+            var h = size(parseInt((allTime/1000)/3600%24));
+            //console.log(h);
+
+            var d = size(parseInt((allTime/1000)/3600/24));
+            //console.log(d);
+
+            $('day').innerText = d;
+            $('hour').innerText = h;
+            $('minute').innerText = m;
+            $('second').innerText = s;
+
+        },1000);
+
+        function size(num) {
+            return num >= 10 ? num :'0'+num;//不足两位补零
+        }
+
+    };
+    function $(id) {
+        return typeof id ==="string"?document.getElementById(id):null;
+    }
+</script>
+</body>
+</html>

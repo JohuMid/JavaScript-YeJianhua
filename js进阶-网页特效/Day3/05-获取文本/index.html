@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        p{
+            margin: 100px 300px;
+        }
+        #share_text{
+            background-color: deepskyblue;
+            width: 150px;
+            color: #ffffff;
+            position: absolute;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<p id="word">
+    XAMPP（Apache+MySQL+PHP+PERL）是一个功能强大的建站集成软件包。这个软件包原来的名字是 LAMPP，但是为了避免误解，最新的几个版本就改名为 XAMPP 了。它可以在Windows、Linux、Solaris、Mac OS X 等多种操作系统下安装使用，支持多语言：英文、简体中文、繁体中文、韩文、俄文、日文等。[1]
+</p>
+<div id="share_text">但是为了避免误</div>
+</body>
+
+<script src="js/myfunction.js"></script>
+
+<script>
+    window.onload = function () {
+
+
+        //1.监听鼠标抬起
+        $("word").onmouseup = function (event) {
+            //1.0兼容
+            var e = event || window.event;
+
+            //1.1获取选中的文字
+            var selectedText;
+            if (window.getSelection){
+                selectedText = window.getSelection().toString();
+
+            }else {
+                selectedText = document.selection.createRange().text;
+            }
+            //console.log(selectedText);
+            $("share_text").innerText = selectedText;
+            $("share_text").style.display = "block";
+
+            //1.3改变位置
+            $("share_text").style.left = e.clientX + 'px';
+            $("share_text").style.top = e.clientY + 'px';
+
+
+
+        };
+        //2.监听文档的点击
+        document.onmousedown= function (event) {
+            //2.0兼容
+            var e = event || window.event;
+
+            //2.1获取点击区域的id
+            var targetId = e.target ? e.target.id : e.srcElement.id;
+            //2.2判断
+            if (targetId !== "share_text"){
+                $("share_text").style.display = "none";
+            }
+            //console.log(targetId);
+
+        }
+
+
+
+    }
+</script>
+</html>

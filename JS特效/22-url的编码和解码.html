@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22-url的编码和解码</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var str = "http://www.itmoma.com?name=yann";
+		var str1 = "http://localhost:63342/JavaScript%E5%8D%8E/JS%E7%89%B9%E6%95%88/22-url%E7%9A%84%E7%BC%96%E7%A0%81%E5%92%8C%E8%A7%A3%E7%A0%81.html?_ijt=9tep98udqj9onkq0jpmj72tjnd";
+
+		//1.编码   http%3A%2F%2Fwww.itmoma.com%3Fname%3Dyann
+		var encodestr = encodeURIComponent(str);
+		console.log(encodestr);
+
+		//2.解码   http://localhost:63342/JavaScript华/JS特效/22-url的编码和解码.html?_ijt=9tep98udqj9onkq0jpmj72tjnd
+        var  decodestr = decodeURIComponent(str1);
+        console.log(decodestr);
+
+        console.log(decodeURIComponent("https://www.baidu.com/s?wd=%E5%AD%A6%E6%95%B0%E5%AD%A6&rsv_spt=1&rsv_iqid=0xb7872e00000517fb&issp=1&f=3&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=0&rsv_sug3=3&rsv_sug1=1&rsv_sug7=100&prefixsug=%25E5%25AD%25A6%25E6%2595%25B0%25E5%25AD%25A6&rsp=0&inputT=2259&rsv_sug4=2405"));
+
+//        小数位数转换
+        var PI = 3.1415926;
+        console.log(PI.toFixed(3));
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08-内置对象window</title>
+</head>
+<body>
+<script type="text/html">
+    /*
+        所有的全局变量都是window的属性
+        所有的全局函数都是window的方法
+     */
+    var str = "找哪个撒";
+    console.log(str);
+    console.log(window.str);
+
+    function func() {
+        var age = 19;
+        console.log(111);
+    }
+
+    func();
+    window.func();
+
+    console.log(window.age);//undefined
+</script>
+<script type="text/html">
+    console.log(1111);
+    console.log(2222);
+    //动态跳转
+    window.location.herf = "http://www.baidu.com";
+    console.log(3333);
+    console.log(4444);
+    console.log(5555);
+
+</script>
+<script>
+    //显示所有对象节点
+    console.log(document);
+    //获取网页中document的所有子节点
+    console.log(document.childNodes);
+
+    console.log(document.head);
+
+    console.log(document.body);
+
+    console.log(document.title);
+
+</script>
+</body>
+</html>

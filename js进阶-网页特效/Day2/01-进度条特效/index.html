@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #bar {
+            width: 1040px;
+            height: 50px;
+            background-color: #cccccc;
+            border-radius: 10px;
+            margin: 100px auto;
+            position: relative;
+
+        }
+        #trap{
+            width: 40px;
+            height: 70px;
+            background-color: orangered;
+            border-radius: 10px;
+            position: absolute;
+            top: -10px;
+            cursor: pointer;
+            opacity: 1;
+        }
+        #number{
+            color: black;
+            float: right;
+            margin-right: -55px;
+            line-height: 50px;
+        }
+        #bar1{
+
+            height: 50px;
+            background-color: orangered;
+            border-radius: 10px;
+            margin: 100px left;
+            position: relative;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="bar">
+
+    <div id="trap"></div>
+    <span id="number">0%</span>
+    <div id="bar1" style="width: 0;"></div>
+</div>
+
+<script>
+    window.onload = function () {
+        var bar = document.getElementById('bar');
+        var trap = bar.children[0];
+        var number = bar.children[1];
+        var bar1 = bar.children[2];
+        console.log(bar1);
+
+
+        bar.onmousemove = function (event) {
+            var e = event || window.event;
+            var x = e.clientX - bar.offsetLeft;
+
+            if(x<0 ){
+                x = 0;
+            }else if(x>1000){
+                x = 1000;
+            }
+            else{
+                trap.style.marginLeft = x +'px';
+                number.innerText = x/10+'%';
+                bar1.style.width = x + 'px';
+                console.log(bar1.width);
+            }
+
+
+        }
+
+
+
+    }
+</script>
+</body>
+</html>

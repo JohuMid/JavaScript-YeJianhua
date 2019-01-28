@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12-百度换肤</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            vertical-align: top;
+             /*图片之间无间隔 */
+        }
+        body{
+            background: url("img/skin1.jpg") no-repeat;
+            background-size: cover;
+        }
+        #box{
+            background-color: rgba(255,255,255,0.2);
+        }
+        #box>ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /*图片平铺的方法*/
+        }
+        #box>ul>li>img{
+            width: 180px;
+            height: 120px;
+
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li><img src="img/skin1.jpg" alt=""></li>
+        <li><img src="img/skin2.jpg" alt=""></li>
+        <li><img src="img/skin3.jpg" alt=""></li>
+        <li><img src="img/skin4.jpg" alt=""></li>
+
+    </ul>
+</div>
+<script>
+    window.onload = function () {
+        var box = document.getElementById("box");
+        var li = box.getElementsByTagName("li");
+        var img = document.getElementsByTagName("img");
+        var body = document.getElementsByClassName("body");
+//        console.log(img[3]);
+        for(var i = 0; i < li.length; i++){
+            console.log(img[i]);
+            img[i].onclick = function () {
+                document.body.style.background = "url(\""+this.src+"\") no-repeat";
+            }
+        }
+    }
+</script>
+</body>
+</html>

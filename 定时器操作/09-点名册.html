@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-点名册</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #name{
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<button id="begin">开始点名</button>
+<button id="end">结束点名</button>
+<div id="name">张三</div>
+
+<script>
+    window.onload = function () {
+        //1.获取标签
+        var timer = null;
+        var begin = document.getElementById('begin');
+        var end = document.getElementById('end');
+        var name = document.getElementById('name');
+
+        //2.定义变量
+        var nameArr = ["林俊杰","周杰伦","张三丰","郑伊健"];
+        name.innerText = nameArr[0];
+
+        //3.监听点击
+        begin.onclick = function () {
+            clearInterval(timer);
+            timer = setInterval(function () {
+                var s_index = parseInt(Math.random()*nameArr.length);
+                var s_name = nameArr[s_index];
+                //console.log(s_name);
+
+                name.innerText = s_name;
+
+            }, 10)
+        };
+        end.onclick = function () {
+            clearInterval(timer);
+        }
+
+
+    }
+</script>
+</body>
+</html>

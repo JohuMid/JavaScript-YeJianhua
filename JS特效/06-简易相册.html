@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-简易相册</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #big_img{
+            width: 300px;
+            height: 300px;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            float: left;
+        }
+        li>img{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<p id="des">淘宝</p>
+<img id="big_img" src="img/1.png" alt="">
+<ul id="fj">
+    <li><img src="img/1.png" title="淘宝" alt=""></li>
+    <li><img src="img/2.png" title="QQ" alt=""></li>
+    <li><img src="img/3.png" title="管家" alt=""></li>
+    <li><img src="img/4.png" title="即刻" alt=""></li>
+    <li><img src="img/5.png" title="美团" alt=""></li>
+    <li><img src="img/6.png" title="微博" alt=""></li>
+
+</ul>
+<script>
+    window.onload = function () {
+        var arrName = ["淘宝","QQ","管家","即刻","美团","微博"];
+        var img = document.getElementById("big_img");
+        var des = document.getElementById("des");
+
+        for(var i = 1; i<arrName.length+1; i++){
+            //console.log(document.getElementsByTagName("img")[i]);
+
+            document.getElementsByTagName("img")[i].onclick = function () {
+//                console.log(this.src);
+//                console.log(this.title);
+                img.src = this.src;
+                des.innerHTML = this.title;
+            }
+        }
+    }
+</script>
+</body>
+</html>

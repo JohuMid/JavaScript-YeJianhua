@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-JS特效-基础知识</title>
+</head>
+<body>
+<script type="text/html">
+    //所有全局的变量都是window的属性
+    var str = "张三";
+    console.log(str);
+    console.log(window.str);
+
+    function test() {
+        var age = 18;
+        console.log(age);
+    }
+
+    console.log(window.age);
+    test();
+
+    //所有全局的函数都是window的方法
+    function func() {
+        console.log("1111");
+    }
+    func();
+    window.func();
+
+</script>
+<script>
+
+</script>
+</body>
+</html>

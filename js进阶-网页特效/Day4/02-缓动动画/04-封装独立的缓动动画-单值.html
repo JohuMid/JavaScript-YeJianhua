@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: darkgrey;
+
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<button id="btn">向右走</button>
+<button id="btn1">向zuo走</button>
+
+<div id="box"></div>
+
+<script src="js/myfunction.js"></script>
+<script>
+    window.onload = function () {
+
+        //1.定义变量
+        var target = 800, timer = null;
+        var box = $("box");
+
+        //1.监听按钮的点击
+        $("btn").onclick = function () {
+            buffer(box,"left", 800);
+        };
+        $("btn1").onclick = function () {
+            buffer(box,"height", 200);
+        }
+
+    };
+
+    function buffer(obj, attr, target) {
+
+        clearInterval(obj.timer);
+
+        obj.timer = setInterval(function () {
+
+            //1.2.1获取初始值
+            var begin = parseInt(getCSSValue(obj, attr));
+            console.log(begin);
+
+            //1.2求出不长
+            var speed = (target- begin) *0.2;
+
+            //判断是否向上取整
+            speed = (target > begin )?  Math.ceil(speed):Math.floor(speed);
+
+            //1.3动起来
+            obj.style[attr] = begin + speed + 'px';
+            obj.innerText = begin;
+
+            //1.5
+            if(begin === target){
+                clearInterval(obj.timer);
+            }
+        }, 20)
+    }
+</script>
+</body>
+</html>

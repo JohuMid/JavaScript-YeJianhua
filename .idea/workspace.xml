@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb96501e-4ae2-44d0-91df-f154637bd3e5" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS基础/09-JS中的对象和面向对象.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="255" lean-forward="true" selection-start-line="255" selection-end-line="255" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JS特效/03-DOM节点操作.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="68" column="46" lean-forward="true" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
+              <folding>
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dis</find>
+      <find>log</find>
+      <find>80</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/02-client家族/03-获取屏幕可见区域.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/03-onresize/index.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/03-onresize/02-改变背景颜色.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/03-onresize/03-瀑布流效果/js/index.js" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/04-冒泡/index.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/04-冒泡/02-蒙版效果.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/05-获取文本/images/index.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/05-获取文本/index.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/05-获取文本/index1.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/05-获取文本/06-综合动画.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/06-综合动画/01-基本动画原理.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/06-综合动画/js/myfunction.js" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/06-综合动画/01-基本动画原理-封装.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/07-无限lunbo/js/myfunction.js" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day3/07-无限lunbo/index.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/01-Math常用函数/index.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/02-基本的缓动动画.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/02-基本的缓动动画.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/03-封装独立的缓动动画.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/03-动态设置元素的属性.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/04-获取css的属性值.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/js/myfunction.js" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/04-封装独立的缓动动画-单值.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/06-JSON的差异化.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/07-封装缓动动画函数-多值.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/09-封装缓动动画函数-透明度.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/03-联动特效/js/myfunction.js" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/08-封装缓动动画函数-回调.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/03-联动特效/index.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/05-音乐导航/js/myfunction.js" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/04-楼层特效/index.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/04-楼层特效/js/myfunction.js" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day4/05-音乐导航/index.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day5/01-网易轮播图/css/index.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day5/01-网易轮播图/css/index.css" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day5/01-网易轮播图/index.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day5/01-网易轮播图/js/index.js" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day5/02-旋转木马/index.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day5/03-面向对象/02-面向对象-矩形.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day5/04-闭包/03-封闭作用域.html" />
+        <option value="$PROJECT_DIR$/js进阶-网页特效/Day5/04-闭包/04-作用域链.html" />
+        <option value="$PROJECT_DIR$/JS基础/03-javascript里的常量和变量.html" />
+        <option value="$PROJECT_DIR$/JS基础/04-JS中的数据和数据类型.html" />
+        <option value="$PROJECT_DIR$/JS基础/05-JS中的运算符.html" />
+        <option value="$PROJECT_DIR$/JS基础/07-JS基础-数组.html" />
+        <option value="$PROJECT_DIR$/JS基础/08-JS基础-函数.html" />
+        <option value="$PROJECT_DIR$/JS基础/09-JS中的对象和面向对象.html" />
+        <option value="$PROJECT_DIR$/quanpailie.html" />
+        <option value="$PROJECT_DIR$/JS特效/02-JS特效-节点关系.html" />
+        <option value="$PROJECT_DIR$/JS特效/04-图片切换.html" />
+        <option value="$PROJECT_DIR$/JS特效/03-DOM节点操作.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1045" />
+    <option name="height" value="789" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JavaScript华" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaScript华" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaScript华" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaScript华" type="462c0819:PsiDirectoryNode" />
+              <item name="定时器操作" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Johu\Documents\前端学习\JavaScript华\js进阶-网页特效\Day4\05-音乐导航\js" />
+      <recent name="C:\Users\Johu\Documents\前端学习\JavaScript华\js进阶-网页特效\Day4\04-楼层特效\js" />
+      <recent name="C:\Users\Johu\Documents\前端学习\JavaScript华\js进阶-网页特效\Day4\03-联动特效\images" />
+      <recent name="C:\Users\Johu\Documents\前端学习\JavaScript华\js进阶-网页特效\Day4\02-缓动动画" />
+      <recent name="C:\Users\Johu\Documents\前端学习\JavaScript华\js进阶-网页特效\Day3\06-综合动画" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Johu\Documents\前端学习\JavaScript华\js进阶-网页特效\Day5\01-网易轮播图" />
+      <recent name="C:\Users\Johu\Documents\前端学习\JavaScript华\js进阶-网页特效\Day4\04-楼层特效\js" />
+      <recent name="C:\Users\Johu\Documents\前端学习\JavaScript华\js进阶-网页特效\Day4\05-音乐导航" />
+      <recent name="C:\Users\Johu\Documents\前端学习\JavaScript华\js进阶-网页特效\Day4\04-楼层特效" />
+      <recent name="C:\Users\Johu\Documents\前端学习\JavaScript华\js进阶-网页特效\Day4\03-联动特效\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="17-排他思想.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaScript华/JS特效/17-排他思想.html">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.17-排他思想.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb96501e-4ae2-44d0-91df-f154637bd3e5" name="Default" comment="" />
+      <created>1517365697466</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1517365697466</updated>
+      <workItem from="1517365699964" duration="8343000" />
+      <workItem from="1517446444367" duration="3519000" />
+      <workItem from="1517466559142" duration="3510000" />
+      <workItem from="1517532094297" duration="6058000" />
+      <workItem from="1517554106131" duration="126000" />
+      <workItem from="1517554501275" duration="9621000" />
+      <workItem from="1517642703639" duration="34000" />
+      <workItem from="1517793072582" duration="3454000" />
+      <workItem from="1517880640166" duration="3938000" />
+      <workItem from="1517892359158" duration="10406000" />
+      <workItem from="1517966387932" duration="2920000" />
+      <workItem from="1518055483853" duration="4168000" />
+      <workItem from="1518139881811" duration="3357000" />
+      <workItem from="1518159222306" duration="2932000" />
+      <workItem from="1518163215288" duration="6020000" />
+      <workItem from="1518227278434" duration="7653000" />
+      <workItem from="1518236763399" duration="1237000" />
+      <workItem from="1518243085325" duration="2920000" />
+      <workItem from="1518340364502" duration="4834000" />
+      <workItem from="1518398680240" duration="12447000" />
+      <workItem from="1518506680493" duration="2337000" />
+      <workItem from="1518568844812" duration="15000" />
+      <workItem from="1518594084795" duration="29000" />
+      <workItem from="1519109753173" duration="1800000" />
+      <workItem from="1519264781382" duration="10416000" />
+      <workItem from="1519348620623" duration="5616000" />
+      <workItem from="1519436460056" duration="5411000" />
+      <workItem from="1519519685908" duration="7782000" />
+      <workItem from="1519638426345" duration="54000" />
+      <workItem from="1519780302482" duration="10405000" />
+      <workItem from="1519872399481" duration="6334000" />
+      <workItem from="1519965622854" duration="169000" />
+      <workItem from="1520044634900" duration="16051000" />
+      <workItem from="1520152997910" duration="4708000" />
+      <workItem from="1520215175049" duration="22198000" />
+      <workItem from="1520325621138" duration="10343000" />
+      <workItem from="1520389081154" duration="4473000" />
+      <workItem from="1520467626925" duration="3756000" />
+      <workItem from="1520500056676" duration="6334000" />
+      <workItem from="1520642522899" duration="4643000" />
+      <workItem from="1520649053440" duration="26000" />
+      <workItem from="1520660610050" duration="4973000" />
+      <workItem from="1520731110453" duration="4808000" />
+      <workItem from="1520748566337" duration="27000" />
+      <workItem from="1520903034463" duration="2079000" />
+      <workItem from="1520942663218" duration="2898000" />
+      <workItem from="1520994247195" duration="3545000" />
+      <workItem from="1521015293829" duration="1691000" />
+      <workItem from="1521074992262" duration="2685000" />
+      <workItem from="1521101884080" duration="3757000" />
+      <workItem from="1521208364592" duration="45000" />
+      <workItem from="1521425275979" duration="7954000" />
+      <workItem from="1521619524853" duration="4885000" />
+      <workItem from="1521679912328" duration="226000" />
+      <workItem from="1521708921730" duration="6013000" />
+      <workItem from="1521881779770" duration="1729000" />
+      <workItem from="1521946364940" duration="1055000" />
+      <workItem from="1522111495215" duration="2023000" />
+      <workItem from="1522204129799" duration="3170000" />
+      <workItem from="1522318757097" duration="149000" />
+      <workItem from="1524361104711" duration="298000" />
+      <workItem from="1544972463045" duration="2770000" />
+      <workItem from="1545043074004" duration="5973000" />
+      <workItem from="1545185562597" duration="2207000" />
+      <workItem from="1548641810920" duration="3615000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="288972000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1753" height="993" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10753307" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32994923" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.32910052" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day4/03-联动特效/images/u=353311076,2068507402&amp;fm=27&amp;gp=0.jpg" />
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/07-封装缓动动画函数-多值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1082">
+          <caret line="65" column="24" lean-forward="true" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/06-JSON的差异化.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/04-封装独立的缓动动画-单值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/03-封装独立的缓动动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/08-封装缓动动画函数-回调.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="66" column="11" lean-forward="true" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/04-获取css的属性值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/js/myfunction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day4/03-联动特效/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day4/02-缓动动画/09-封装缓动动画函数-透明度.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="86" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day4/05-音乐导航/js/myfunction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="115" column="19" lean-forward="true" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day4/04-楼层特效/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="95" column="26" lean-forward="true" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day4/04-楼层特效/js/myfunction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2904">
+          <caret line="126" column="23" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/01-网易轮播图/css/index.html" />
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/01-网易轮播图/js/myfunction.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day4/05-音乐导航/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="104" column="53" selection-start-line="104" selection-start-column="53" selection-end-line="104" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="1771" column="4" selection-start-line="1771" selection-start-column="4" selection-end-line="1771" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/01-网易轮播图/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/01-网易轮播图/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/01-网易轮播图/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/02-旋转木马/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/02-旋转木马/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="121" column="19" lean-forward="true" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/03-面向对象/01-狗类.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/02-旋转木马/js/myFunc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/04-闭包/01-作用域.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/04-闭包/02-基本的闭包.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/04-闭包/03-封闭作用域.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/04-闭包/04-作用域链.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/03-面向对象/02-面向对象-矩形.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/04-闭包/05-高级排他.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/04-闭包/06-闭包的参数传递.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js进阶-网页特效/Day5/03-面向对象/js/Rect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/02-JavaScript的初体验.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/04-JS中的数据和数据类型.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/03-javascript里的常量和变量.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/05-JS中的运算符.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/07-JS基础-数组.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/08-JS基础-函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS特效/01-JS特效-基础知识.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/定时器操作/14-轮播效果.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS特效/02-JS特效-节点关系.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="87" column="29" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS特效/04-图片切换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS特效/05-显示与隐藏图片.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS特效/26-九宫格布局.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="149" column="55" selection-start-line="149" selection-start-column="55" selection-end-line="149" selection-end-column="55" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS特效/17-排他思想.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/定时器操作/13-定时器缓动动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/10-JS数据类型.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/11-JS数组高级API.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/09-JS中的对象和面向对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="255" lean-forward="true" selection-start-line="255" selection-end-line="255" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quanpailie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS特效/03-DOM节点操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="68" column="46" lean-forward="true" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
+          <folding>
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

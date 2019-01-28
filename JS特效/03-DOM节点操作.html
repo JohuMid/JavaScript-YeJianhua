@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-DOM节点操作</title>
+    <style>
+        #box{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+<div id="box">
+    <p id="word">还不够V语</p>
+    <button>当初</button>
+    <img src="img/2.png">
+
+</div>
+<script type="text/html">
+    window.onload = function () {
+        //节点操作：增删改查
+        var box = document.getElementById("box");
+
+        //1.创建节点
+        var img = document.createElement("img");
+        img.src = "img/1.png";
+
+        //插入节点
+        //box.appendChild(img);
+        var btn = document.getElementsByTagName("button")[0];
+        box.insertBefore(img, btn);
+        //box.insertBefore(插入节点, 参照节点);
+
+        //删除节点
+        var word = document.getElementById("word");
+        //word.parentNode.removeChild(word);//删除自己
+        //拿到父节点调用方法删除自己
+        word.remove();
+        btn.remove();
+
+    }
+</script>
+<script type="text/html">
+    window.onload = function () {
+        //新节点=要复制的节点。cloneNode(参数);参数可选复制节点
+        var box = document.getElementById("box");
+        var newTag = box.cloneNode(false);//浅拷贝,只拷贝一层
+        var allTag = box.cloneNode(true);//深拷贝，拷贝全部包括子节点
+        console.log(newTag);
+        console.log(allTag);
+
+        document.body.appendChild(newTag);
+    }
+</script>
+<script>
+    window.onload = function () {
+        //节点属性（节点.属性）
+        var img = document.getElementsByTagName("img")[0];
+        //1.获取：getAttribute(名称)
+        console.log(img.src);
+        console.log(img.getAttribute("src"));
+        img.setAttribute("aaaa","12345");
+
+        //2.设置：setAttribute
+        img.setAttribute("title","好的");
+        console.log(img.getAttribute("aaaa"));
+        //未定义的方法需要定义以后使用getAttribute()
+
+        //3.删除：removeAttribute()
+        img.removeAttribute("title");
+        img.removeAttribute("src");
+
+
+    }
+</script>
+
+</body>
+</html>

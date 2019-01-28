@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;;
+            list-style: none;
+        }
+        body{
+            background-color: pink;
+        }
+        #nav{
+            width: 900px;
+            height: 63px;
+            background:url("images/城市服务.png")no-repeat right #ffffff;
+            border-radius: 5px;
+            position: relative;
+            margin: 100px auto;
+        }
+        #nav ul{
+            position: relative;
+
+        }
+        #nav ul li{
+            float: left;
+            width: 90px;
+            height: 63px;
+            text-align: center;
+            line-height: 63px;
+            cursor: pointer;
+            color: red;
+        }
+        #t_mall{
+            width: 88px;
+            height: 63px;
+            position: absolute;
+        }
+        #t_mall img{
+            width: 88px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<nav id="nav">
+    <span id="t_mall"><img src="images/天猫形象2%20(1).png" alt=""></span>
+    <ul>
+        <li>双11狂欢</li>
+        <li>服装会场</li>
+        <li>数码家电</li>
+        <li>家居建材</li>
+        <li>母婴童装</li>
+        <li>手机会场</li>
+        <li>美妆会场</li>
+        <li>进口会场</li>
+        <li>飞猪旅行</li>
+    </ul>
+</nav>
+
+<script>
+    window.onload = function () {
+        var nav = $('nav');
+        var t_mall = nav.children[0];
+        var ul = nav.children[1];
+        var allLis = ul.children;
+        //记录鼠标点击位置
+
+        var beginX = 0;
+
+
+        //2.遍历
+        for(var i = 0; i<allLis.length; i++){
+            var li = allLis[i];
+
+            li.onmouseover = function () {
+                //console.log("上去");
+                end = this.offsetLeft;
+            };
+
+            li.onmousedown = function () {
+                //console.log("按下");
+                beginX = this.offsetLeft;
+            };
+            li.onmouseout = function () {
+                //console.log("离开");
+                end = beginX;
+            }
+        }
+
+        //3.缓动动画
+        var begin = 0, end = 0;
+        setInterval(function () {
+            begin = begin + (end-begin) * 0.2;
+            t_mall.style.left = begin + 'px';
+        },10);
+
+
+        function $(id) {
+            return typeof id === "string" ? document.getElementById(id):null;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-图片切换1</title>
+    <style>
+        #box{
+            width: 300px;
+            height: 350px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        #up>a>img{
+            width: 300px;
+            height: 300px;
+        }
+        #card{
+            list-style: none;
+            margin-top: 0;
+            height: 50px;
+            width: 300px;
+            margin-left: -40px;
+        }
+        li{
+            float: left;
+            width: 50px;
+            height: 50px;
+            box-sizing: border-box;
+        }
+        li>img{
+            width: 50px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="up">
+        <a id="src" href="https://www.taobao.com/ "><img id="big_img" src="img/1.png" alt=""></a>
+    </div>
+    <div id="down">
+        <ul id="card">
+            <li><img src="img/1.png" alt=""></li>
+            <li><img src="img/2.png" alt=""></li>
+            <li><img src="img/3.png" alt=""></li>
+            <li><img src="img/4.png" alt=""></li>
+            <li><img src="img/5.png" alt=""></li>
+            <li><img src="img/6.png" alt=""></li>
+        </ul>
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        var box = document.getElementById("box");
+        var up = document.getElementById("up");
+        var img = document.getElementById("big_img");
+        var src = document.getElementById("src");
+        var card = document.getElementById("card");
+        var li = card.getElementsByTagName("li");
+        var s_img = document.getElementsByTagName("img");
+        var arr = ["https://www.taobao.com/","https://im.qq.com/pcqq/","https://guanjia.qq.com","http://www.ruguoapp.com/","http://www.meituan.com/","https://weibo.com/"];
+        var num=1;
+
+        //console.log(s_img[1].src);
+
+
+        for(var i = 1; i<li.length+1; i++){
+            num = i;
+            s_img[i].onmouseover = function (num) {
+                img.src = this.src;
+                src.href = arr[num];
+            };
+
+            //console.log(s_img[i].src);
+        }
+
+    }
+
+</script>
+</body>

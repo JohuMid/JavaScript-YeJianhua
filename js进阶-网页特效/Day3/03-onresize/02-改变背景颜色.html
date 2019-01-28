@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="js/myfunction.js"></script>
+<script>
+    //当屏幕的宽度>=960时，页面变色
+    window.onload = function () {
+        window.onresize = changeColor;
+
+        function changeColor() {
+            if(client().width >=960){
+                document.body.style.backgroundColor = 'red';
+            }else if(client().width >= 640){
+                document.body.style.backgroundColor = 'deepskyblue';
+            }else{
+                document.body.style.backgroundColor = 'pink';
+            }
+        }
+    }
+</script>
+</body>
+</html>

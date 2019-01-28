@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 20000px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+
+<script>
+    document.onclick = function (event) {
+        var e = event || window.event;
+
+        //alert(e.screenX+','+ e.screenY);
+
+        //alert(e.pageX+','+ e.pageY);
+
+        alert(e.clientX+','+ e.clientY);//不管滚多少，当前界面坐标
+
+        //onmouseup鼠标弹起
+
+
+
+    }
+</script>
+
+
+</body>
+</html>

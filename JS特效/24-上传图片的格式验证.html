@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>23-上传图片的格式验证</title>
+</head>
+<body>
+<label>上传图片的格式验证</label>
+
+<input type="file" id="file">
+
+<script>
+    window.onload = function () {
+        /*
+            jpg png gif
+         */
+        //1.获取标签
+        var file = document.getElementById("file");
+        //2.监听域的变化
+        file.onchange = function () {
+            //2.1获取图片路径
+            var path = this.value;
+            console.log(path);
+
+
+            //2.2截取 substr
+            var suffix = path.substr(path.lastIndexOf("."));
+            console.log(suffix);
+
+            //2.3统一小写
+            var lower_suffix = suffix.toLowerCase();
+            console.log(lower_suffix);
+
+            //2.4判断
+            if(lower_suffix === '.jpg'||lower_suffix ==='.png'||lower_suffix ==='.jpeg'||lower_suffix ==='.gif'){
+                alert("上传图片格式正确");
+            }else{
+                alert("上传图片格式不正确");
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

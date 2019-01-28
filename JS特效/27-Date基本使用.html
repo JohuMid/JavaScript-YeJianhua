@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>27-Date基本使用</title>
+</head>
+<body>
+
+<script>
+    //1.声明一个日期对象
+    var date = new Date();
+    console.log(date);
+
+    console.log(date.getDate());        //获取日1-31
+    console.log(date.getDay());         //获取星期0-6
+    console.log(date.getMonth());       //获取月0-11
+    console.log(date.getFullYear());    //获取完整年份（浏览器都支持）
+    console.log(date.getHours());       //获取小时0-23
+    console.log(date.getMinutes());     //获取分钟0-59
+    console.log(date.getSeconds());     //获取秒0-59
+    console.log(date.getMilliseconds());//获取毫秒1s = 1000ms
+    console.log(date.getTime());        //返回累计毫秒数（从1970/1/1午夜）时间戳
+
+
+</script>
+
+</body>
+</html>
